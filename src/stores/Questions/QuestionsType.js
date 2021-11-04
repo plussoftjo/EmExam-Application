@@ -1,0 +1,9 @@
+let QuestionsType = {
+    SET_QUESTIONS:"SET_QUESTIONS",
+    SET_SELECTED_INDEX:"SET_SELECTED_INDEX",
+    SET_QUESTION:"SET_QUESTION",
+    SET_ANSWERS_LOGS:"SET_ANSWERS_LOGS"
+   
+  }
+  
+  export default QuestionsType;

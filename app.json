@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "EM-Exam",
+    "slug": "emexam",
+    "version": "1.0.6",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "emexam",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.emexam.plus",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-8749426160957410~6103534841"
+      },
+      "googleServicesFile": "./GoogleService-Info-ios.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "useNextNotificationsApi": true,
+      "package": "com.emexam.plus",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [],
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-8749426160957410~4271578427"
+      },
+      "versionCode": 6
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "facebookAppId": "1970270336481309",
+    "facebookDisplayName": "Em-Exam",
+    "facebookAdvertiserIDCollectionEnabled": true
+  }
+}

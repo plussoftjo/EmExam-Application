@@ -1,0 +1,61 @@
+{
+    "main": {
+        "header": "مرحبا",
+        "sub_title": "في EM-Exam",
+        "select_type": "قم باختيار مستوى",
+        "start": "أبدا",
+        "do_you_want_register": "هل تريد التسجيل ؟",
+        "last_result": "أخر النتائج",
+        "all_quiz": "جميع الاختبارات"
+    },
+    "questions": {
+        "did_you_ready": "هل أنت مستعد ؟",
+        "go": "أبدا",
+        "level": "المستوى",
+        "end": "انهاء",
+        "results": "النتائج",
+        "correct": "الصحيح",
+        "answers": "نتائج الاجابات"
+    },
+    "results": {
+        "header": "نتائج المستخدم",
+        "no_results": "لا تملك نتائج حاليا قم ببدأ اختبار جديد",
+        "start_exam": "أبدا الأختبار"
+    },
+    "auth": {
+        "name": "الأسم",
+        "phone": "رقم الهاتف",
+        "password": "رمز المرور",
+        "login": "تسجيل دخول",
+        "register": "تسجيل",
+        "do_not_have_account": "لا تملك حساب جديد ؟",
+        "new_account": "حساب جديد",
+        "have_account": "هل تملك حساب ؟"
+    },
+    "settings": {
+        "user_details": "معلومات المستخدم ",
+        "languages": "اللغة",
+        "logout": "تسجيل خروج",
+        "settings": "الأعدادات",
+        "user_edit": {
+            "title": "تعديل المعلومات",
+            "name": "الأسم",
+            "phone": "رقم الهاتف",
+            "update_info": "تحديث المعلومات"
+        },
+        "select_language": "قم بأختيار لغة"
+    },
+    "err": {
+        "error": "يوجد خطا في الحقول الرجاء المحاولة مرة أخرى",
+        "complete_fields": "الرجاء تعبئة جميع الحقول ",
+        "login_error": "يوجد خطا في رمز المرور او اسم المستخدم"
+    },
+    "global": {
+        "save": "Save",
+        "add": "Add",
+        "delete": "Delete",
+        "close": "Close",
+        "search": "Search",
+        "next": "Next"
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "73134337495",
+    "project_id": "em-exam",
+    "storage_bucket": "em-exam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73134337495:android:a1f1af22e7ac4aba812f92",
+        "android_client_info": {
+          "package_name": "com.emexam.plus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73134337495-d1ujqioca10oj8b9p0shfmne5u4qtcb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB05jTZSaNyhCFdOV2abePggRIPjouEioE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73134337495-d1ujqioca10oj8b9p0shfmne5u4qtcb1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
