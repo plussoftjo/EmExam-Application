@@ -22,7 +22,7 @@ let QuestionsShow = (props) => {
     props;
   let [correctAnswer, setCorrectAnswer] = React.useState(null);
   let [notCorrectAnswer, setNotCorrectAnswer] = React.useState(null);
-  let [adsShow, setAdsShow] = React.useState(2);
+  let [adsShow, setAdsShow] = React.useState(1);
 
   // let _showAds = async () => {
   //   await AdMobInterstitial.setAdUnitID(Platform.OS == 'android' ? Ads.android.QuestionsAds : Ads.ios.QuestionsAds); // Test ID, Replace with your-admob-unit-id
@@ -37,18 +37,8 @@ let QuestionsShow = (props) => {
     checkPermission();
   }, []);
   let _showAds = async () => {
-    // FacebookAds.InterstitialAdManager.showAd(
-    //   Platform.OS == "android" ? Ads.android.QuestionsAds : Ads.ios.QuestionsAds
-    // )
-    //   .then((didClick) => {
-    //     console.log(didClick);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
-
     FacebookAds.InterstitialAdManager.showAd(
-      "1970270336481309_1971966639645012"
+      Platform.OS == "android" ? Ads.android.QuestionsAds : Ads.ios.QuestionsAds
     )
       .then((didClick) => {
         console.log(didClick);
@@ -56,12 +46,22 @@ let QuestionsShow = (props) => {
       .catch((error) => {
         console.log(error);
       });
+
+    // FacebookAds.InterstitialAdManager.showAd(
+    //   "1970270336481309_1971966639645012"
+    // )
+    //   .then((didClick) => {
+    //     console.log(didClick);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
   };
   let NextQuestion = () => {
-    _showAds();
+    // _showAds();
     if (adsShow == 0) {
       _showAds();
-      setAdsShow(6);
+      setAdsShow(3);
     } else {
       setAdsShow(adsShow - 1);
     }
