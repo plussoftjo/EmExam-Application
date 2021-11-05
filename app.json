@@ -41,8 +41,18 @@
     "web": {
       "favicon": "./assets/images/favicon.png"
     },
+    "facebookScheme": "fb1970270336481309",
     "facebookAppId": "1970270336481309",
-    "facebookDisplayName": "Em-Exam",
-    "facebookAdvertiserIDCollectionEnabled": true
+    "facebookDisplayName": "Em-Exam - Audience Network",
+    "facebookAutoLogAppEventsEnabled": true,
+    "facebookAdvertiserIDCollectionEnabled": true,
+    "plugins": [
+      [
+        "expo-ads-facebook",
+        {
+          "userTrackingPermission": "This identifier will be used to deliver personalized ads to you."
+        }
+      ]
+    ]
   }
 }

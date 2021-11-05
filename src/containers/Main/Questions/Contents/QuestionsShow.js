@@ -14,7 +14,7 @@ import * as FacebookAds from "expo-ads-facebook";
 import { Platform } from "react-native";
 
 // FacebookAds.AdSettings.addTestDevice(FacebookAds.AdSettings.currentDeviceHash);
-
+FacebookAds.AdSettings.setAdvertiserTrackingEnabled(true);
 let QuestionsShow = (props) => {
   let theme = useTheme();
   let { questions, question, selectedIndex, answersLogs } = props.questions;
@@ -30,9 +30,25 @@ let QuestionsShow = (props) => {
   //   await AdMobInterstitial.showAdAsync();
   // }
 
+  let checkPermission = async () => {
+    await FacebookAds.AdSettings.requestPermissionsAsync();
+  };
+  React.useEffect(() => {
+    checkPermission();
+  }, []);
   let _showAds = async () => {
+    // FacebookAds.InterstitialAdManager.showAd(
+    //   Platform.OS == "android" ? Ads.android.QuestionsAds : Ads.ios.QuestionsAds
+    // )
+    //   .then((didClick) => {
+    //     console.log(didClick);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+
     FacebookAds.InterstitialAdManager.showAd(
-      Platform.OS == "android" ? Ads.android.QuestionsAds : Ads.ios.QuestionsAds
+      "1970270336481309_1971966639645012"
     )
       .then((didClick) => {
         console.log(didClick);
@@ -42,7 +58,7 @@ let QuestionsShow = (props) => {
       });
   };
   let NextQuestion = () => {
-    // _showAds();
+    _showAds();
     if (adsShow == 0) {
       _showAds();
       setAdsShow(6);
